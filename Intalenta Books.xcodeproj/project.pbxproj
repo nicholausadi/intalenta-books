@@ -16,6 +16,11 @@
 		F03C944C2C6BC57A0033DC7D /* Intalenta_BooksUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C944B2C6BC57A0033DC7D /* Intalenta_BooksUITestsLaunchTests.swift */; };
 		F03C94592C6BC61B0033DC7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C94582C6BC61B0033DC7D /* AppDelegate.swift */; };
 		F03C945B2C6BC62E0033DC7D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C945A2C6BC62E0033DC7D /* SceneDelegate.swift */; };
+		F03C945F2C6BCC260033DC7D /* BookModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C945E2C6BCC260033DC7D /* BookModel.swift */; };
+		F03C94622C6BCE300033DC7D /* CodableWrappers in Frameworks */ = {isa = PBXBuildFile; productRef = F03C94612C6BCE300033DC7D /* CodableWrappers */; };
+		F03C94662C6BCF8C0033DC7D /* URLCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C94652C6BCF8C0033DC7D /* URLCoder.swift */; };
+		F03C94692C6BD0E00033DC7D /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C94682C6BD0E00033DC7D /* Endpoints.swift */; };
+		F03C946C2C6BD1350033DC7D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F03C946B2C6BD1350033DC7D /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,9 @@
 		F03C94582C6BC61B0033DC7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F03C945A2C6BC62E0033DC7D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F03C945C2C6BC6C10033DC7D /* Intalenta-Books-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Intalenta-Books-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F03C945E2C6BCC260033DC7D /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
+		F03C94652C6BCF8C0033DC7D /* URLCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCoder.swift; sourceTree = "<group>"; };
+		F03C94682C6BD0E00033DC7D /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03C94622C6BCE300033DC7D /* CodableWrappers in Frameworks */,
+				F03C946C2C6BD1350033DC7D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,6 +115,9 @@
 				F03C94582C6BC61B0033DC7D /* AppDelegate.swift */,
 				F03C945A2C6BC62E0033DC7D /* SceneDelegate.swift */,
 				F03C94322C6BC57A0033DC7D /* Assets.xcassets */,
+				F03C94632C6BCF600033DC7D /* Services */,
+				F03C945D2C6BCC1F0033DC7D /* Models */,
+				F03C94672C6BD0450033DC7D /* Coders */,
 				F03C94342C6BC57A0033DC7D /* Preview Content */,
 			);
 			path = "Intalenta Books";
@@ -135,6 +148,30 @@
 			path = "Intalenta BooksUITests";
 			sourceTree = "<group>";
 		};
+		F03C945D2C6BCC1F0033DC7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F03C945E2C6BCC260033DC7D /* BookModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F03C94632C6BCF600033DC7D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F03C94682C6BD0E00033DC7D /* Endpoints.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F03C94672C6BD0450033DC7D /* Coders */ = {
+			isa = PBXGroup;
+			children = (
+				F03C94652C6BCF8C0033DC7D /* URLCoder.swift */,
+			);
+			path = Coders;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -151,6 +188,10 @@
 			dependencies = (
 			);
 			name = "Intalenta Books";
+			packageProductDependencies = (
+				F03C94612C6BCE300033DC7D /* CodableWrappers */,
+				F03C946B2C6BD1350033DC7D /* Alamofire */,
+			);
 			productName = "Intalenta Books";
 			productReference = F03C942B2C6BC5790033DC7D /* Intalenta Books.app */;
 			productType = "com.apple.product-type.application";
@@ -223,6 +264,10 @@
 				Base,
 			);
 			mainGroup = F03C94222C6BC5780033DC7D;
+			packageReferences = (
+				F03C94602C6BCE300033DC7D /* XCRemoteSwiftPackageReference "CodableWrappers" */,
+				F03C946A2C6BD1350033DC7D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = F03C942C2C6BC5790033DC7D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -265,7 +310,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F03C945F2C6BCC260033DC7D /* BookModel.swift in Sources */,
+				F03C94662C6BCF8C0033DC7D /* URLCoder.swift in Sources */,
 				F03C94592C6BC61B0033DC7D /* AppDelegate.swift in Sources */,
+				F03C94692C6BD0E00033DC7D /* Endpoints.swift in Sources */,
 				F03C94312C6BC5790033DC7D /* ContentView.swift in Sources */,
 				F03C942F2C6BC5790033DC7D /* Intalenta_BooksApp.swift in Sources */,
 				F03C945B2C6BC62E0033DC7D /* SceneDelegate.swift in Sources */,
@@ -606,6 +654,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F03C94602C6BCE300033DC7D /* XCRemoteSwiftPackageReference "CodableWrappers" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/GottaGetSwifty/CodableWrappers.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.7;
+			};
+		};
+		F03C946A2C6BD1350033DC7D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F03C94612C6BCE300033DC7D /* CodableWrappers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F03C94602C6BCE300033DC7D /* XCRemoteSwiftPackageReference "CodableWrappers" */;
+			productName = CodableWrappers;
+		};
+		F03C946B2C6BD1350033DC7D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F03C946A2C6BD1350033DC7D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F03C94232C6BC5780033DC7D /* Project object */;
 }

@@ -1,0 +1,24 @@
+{
+  "originHash" : "9f42623d41983291d97d2d4dc21365fa1b36cd38b5a8b4a99be4179dfda08a4b",
+  "pins" : [
+    {
+      "identity" : "alamofire",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/Alamofire/Alamofire.git",
+      "state" : {
+        "revision" : "f455c2975872ccd2d9c81594c658af65716e9b9a",
+        "version" : "5.9.1"
+      }
+    },
+    {
+      "identity" : "codablewrappers",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/GottaGetSwifty/CodableWrappers.git",
+      "state" : {
+        "revision" : "4eb46a4c656333e8514db8aad204445741de7d40",
+        "version" : "2.0.7"
+      }
+    }
+  ],
+  "version" : 3
+}
