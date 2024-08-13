@@ -9,6 +9,6 @@ import SwiftUI
 
 struct Intalenta_BooksApp: View {
     var body: some View {
-        ContentView()
+        BookLibraryView()
     }
 }

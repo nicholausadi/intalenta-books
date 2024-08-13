@@ -21,13 +21,13 @@ struct BaseUrl {
 }
 
 enum Endpoints {
-    case booksList
-    case bookDetail(bookId: String)
+    case listBooks
+    case bookDetail(id: String)
     
     public var url: String {
         switch self {
-        case .booksList: return "/\(BaseUrl.url)/mock/books"
-        case .bookDetail(let bookId): return "/\(BaseUrl.url)/cutamar/mock/books/\(bookId)"
+        case .listBooks: return "/\(BaseUrl.url)/mock/books"
+        case .bookDetail(let id): return "/\(BaseUrl.url)/cutamar/mock/books/\(id)"
         }
     }
 }

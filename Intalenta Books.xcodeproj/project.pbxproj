@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		F03C942F2C6BC5790033DC7D /* Intalenta_BooksApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C942E2C6BC5790033DC7D /* Intalenta_BooksApp.swift */; };
-		F03C94312C6BC5790033DC7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C94302C6BC5790033DC7D /* ContentView.swift */; };
 		F03C94332C6BC57A0033DC7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F03C94322C6BC57A0033DC7D /* Assets.xcassets */; };
 		F03C94362C6BC57A0033DC7D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F03C94352C6BC57A0033DC7D /* Preview Assets.xcassets */; };
 		F03C94402C6BC57A0033DC7D /* Intalenta_BooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C943F2C6BC57A0033DC7D /* Intalenta_BooksTests.swift */; };
@@ -21,6 +20,17 @@
 		F03C94662C6BCF8C0033DC7D /* URLCoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C94652C6BCF8C0033DC7D /* URLCoder.swift */; };
 		F03C94692C6BD0E00033DC7D /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = F03C94682C6BD0E00033DC7D /* Endpoints.swift */; };
 		F03C946C2C6BD1350033DC7D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = F03C946B2C6BD1350033DC7D /* Alamofire */; };
+		F061430A2C6BD4340056F595 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06143092C6BD4340056F595 /* NetworkManager.swift */; };
+		F061430C2C6BD4B60056F595 /* ListBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F061430B2C6BD4B60056F595 /* ListBooksService.swift */; };
+		F061430E2C6BD4C30056F595 /* BookDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F061430D2C6BD4C30056F595 /* BookDetailService.swift */; };
+		F06143112C6BD5590056F595 /* Factory in Frameworks */ = {isa = PBXBuildFile; productRef = F06143102C6BD5590056F595 /* Factory */; };
+		F06143132C6BD58F0056F595 /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06143122C6BD58F0056F595 /* DependencyContainer.swift */; };
+		F06143172C6BDC340056F595 /* ListBooksRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06143162C6BDC340056F595 /* ListBooksRepository.swift */; };
+		F06143192C6BDC680056F595 /* BookLibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06143182C6BDC680056F595 /* BookLibraryViewModel.swift */; };
+		F061431B2C6BDC6F0056F595 /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F061431A2C6BDC6F0056F595 /* BookDetailViewModel.swift */; };
+		F061431D2C6BE0970056F595 /* BookDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = F061431C2C6BE0970056F595 /* BookDetailRepository.swift */; };
+		F06143202C6BE2D90056F595 /* BookLibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F061431F2C6BE2D90056F595 /* BookLibraryView.swift */; };
+		F06143222C6BE2E10056F595 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06143212C6BE2E10056F595 /* BookDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +53,6 @@
 /* Begin PBXFileReference section */
 		F03C942B2C6BC5790033DC7D /* Intalenta Books.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Intalenta Books.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F03C942E2C6BC5790033DC7D /* Intalenta_BooksApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Intalenta_BooksApp.swift; sourceTree = "<group>"; };
-		F03C94302C6BC5790033DC7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F03C94322C6BC57A0033DC7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F03C94352C6BC57A0033DC7D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F03C943B2C6BC57A0033DC7D /* Intalenta BooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Intalenta BooksTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -57,6 +66,16 @@
 		F03C945E2C6BCC260033DC7D /* BookModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookModel.swift; sourceTree = "<group>"; };
 		F03C94652C6BCF8C0033DC7D /* URLCoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLCoder.swift; sourceTree = "<group>"; };
 		F03C94682C6BD0E00033DC7D /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
+		F06143092C6BD4340056F595 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		F061430B2C6BD4B60056F595 /* ListBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBooksService.swift; sourceTree = "<group>"; };
+		F061430D2C6BD4C30056F595 /* BookDetailService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailService.swift; sourceTree = "<group>"; };
+		F06143122C6BD58F0056F595 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
+		F06143162C6BDC340056F595 /* ListBooksRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListBooksRepository.swift; sourceTree = "<group>"; };
+		F06143182C6BDC680056F595 /* BookLibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLibraryViewModel.swift; sourceTree = "<group>"; };
+		F061431A2C6BDC6F0056F595 /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
+		F061431C2C6BE0970056F595 /* BookDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailRepository.swift; sourceTree = "<group>"; };
+		F061431F2C6BE2D90056F595 /* BookLibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookLibraryView.swift; sourceTree = "<group>"; };
+		F06143212C6BE2E10056F595 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06143112C6BD5590056F595 /* Factory in Frameworks */,
 				F03C94622C6BCE300033DC7D /* CodableWrappers in Frameworks */,
 				F03C946C2C6BD1350033DC7D /* Alamofire in Frameworks */,
 			);
@@ -111,10 +131,13 @@
 			children = (
 				F03C945C2C6BC6C10033DC7D /* Intalenta-Books-Info.plist */,
 				F03C942E2C6BC5790033DC7D /* Intalenta_BooksApp.swift */,
-				F03C94302C6BC5790033DC7D /* ContentView.swift */,
 				F03C94582C6BC61B0033DC7D /* AppDelegate.swift */,
 				F03C945A2C6BC62E0033DC7D /* SceneDelegate.swift */,
+				F06143122C6BD58F0056F595 /* DependencyContainer.swift */,
 				F03C94322C6BC57A0033DC7D /* Assets.xcassets */,
+				F061431E2C6BE2C40056F595 /* View */,
+				F06143152C6BDB7B0056F595 /* ViewModels */,
+				F06143142C6BDB700056F595 /* Repositories */,
 				F03C94632C6BCF600033DC7D /* Services */,
 				F03C945D2C6BCC1F0033DC7D /* Models */,
 				F03C94672C6BD0450033DC7D /* Coders */,
@@ -160,6 +183,9 @@
 			isa = PBXGroup;
 			children = (
 				F03C94682C6BD0E00033DC7D /* Endpoints.swift */,
+				F06143092C6BD4340056F595 /* NetworkManager.swift */,
+				F061430B2C6BD4B60056F595 /* ListBooksService.swift */,
+				F061430D2C6BD4C30056F595 /* BookDetailService.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -170,6 +196,33 @@
 				F03C94652C6BCF8C0033DC7D /* URLCoder.swift */,
 			);
 			path = Coders;
+			sourceTree = "<group>";
+		};
+		F06143142C6BDB700056F595 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				F06143162C6BDC340056F595 /* ListBooksRepository.swift */,
+				F061431C2C6BE0970056F595 /* BookDetailRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		F06143152C6BDB7B0056F595 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F06143182C6BDC680056F595 /* BookLibraryViewModel.swift */,
+				F061431A2C6BDC6F0056F595 /* BookDetailViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F061431E2C6BE2C40056F595 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F061431F2C6BE2D90056F595 /* BookLibraryView.swift */,
+				F06143212C6BE2E10056F595 /* BookDetailView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -191,6 +244,7 @@
 			packageProductDependencies = (
 				F03C94612C6BCE300033DC7D /* CodableWrappers */,
 				F03C946B2C6BD1350033DC7D /* Alamofire */,
+				F06143102C6BD5590056F595 /* Factory */,
 			);
 			productName = "Intalenta Books";
 			productReference = F03C942B2C6BC5790033DC7D /* Intalenta Books.app */;
@@ -267,6 +321,7 @@
 			packageReferences = (
 				F03C94602C6BCE300033DC7D /* XCRemoteSwiftPackageReference "CodableWrappers" */,
 				F03C946A2C6BD1350033DC7D /* XCRemoteSwiftPackageReference "Alamofire" */,
+				F061430F2C6BD5590056F595 /* XCRemoteSwiftPackageReference "Factory" */,
 			);
 			productRefGroup = F03C942C2C6BC5790033DC7D /* Products */;
 			projectDirPath = "";
@@ -310,12 +365,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F061431B2C6BDC6F0056F595 /* BookDetailViewModel.swift in Sources */,
 				F03C945F2C6BCC260033DC7D /* BookModel.swift in Sources */,
 				F03C94662C6BCF8C0033DC7D /* URLCoder.swift in Sources */,
 				F03C94592C6BC61B0033DC7D /* AppDelegate.swift in Sources */,
+				F061431D2C6BE0970056F595 /* BookDetailRepository.swift in Sources */,
+				F061430E2C6BD4C30056F595 /* BookDetailService.swift in Sources */,
 				F03C94692C6BD0E00033DC7D /* Endpoints.swift in Sources */,
-				F03C94312C6BC5790033DC7D /* ContentView.swift in Sources */,
+				F06143132C6BD58F0056F595 /* DependencyContainer.swift in Sources */,
+				F061430A2C6BD4340056F595 /* NetworkManager.swift in Sources */,
+				F061430C2C6BD4B60056F595 /* ListBooksService.swift in Sources */,
+				F06143192C6BDC680056F595 /* BookLibraryViewModel.swift in Sources */,
+				F06143222C6BE2E10056F595 /* BookDetailView.swift in Sources */,
 				F03C942F2C6BC5790033DC7D /* Intalenta_BooksApp.swift in Sources */,
+				F06143202C6BE2D90056F595 /* BookLibraryView.swift in Sources */,
+				F06143172C6BDC340056F595 /* ListBooksRepository.swift in Sources */,
 				F03C945B2C6BC62E0033DC7D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,6 +736,14 @@
 				minimumVersion = 5.9.1;
 			};
 		};
+		F061430F2C6BD5590056F595 /* XCRemoteSwiftPackageReference "Factory" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hmlongco/Factory.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.3.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -684,6 +756,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F03C946A2C6BD1350033DC7D /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		F06143102C6BD5590056F595 /* Factory */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F061430F2C6BD5590056F595 /* XCRemoteSwiftPackageReference "Factory" */;
+			productName = Factory;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
