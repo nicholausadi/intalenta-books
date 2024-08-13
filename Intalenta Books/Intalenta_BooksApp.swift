@@ -7,11 +7,8 @@
 
 import SwiftUI
 
-@main
-struct Intalenta_BooksApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct Intalenta_BooksApp: View {
+    var body: some View {
+        ContentView()
     }
 }
